@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edad de moiso</h1>
+    <script>
+        //alert("La edad de moiso es: ... ")
+        //alert("La edad de moiso es ? ")
+        document.write("La edad de moiso es: ... ")
+        document.write("<br>")
+        document.write("La edad de moiso es ? ") 
+        document.write("<br>")
+        document.write(31) 
+        document.write("<br>")
+        document.write("La edad de moiso es: " + 31) 
+        document.write("<br>")
+        document.write("La edad de moiso es: " + 31 + " años")
+        document.write("<br>")
+        //concatena strings
+        document.write("La edad de moiso es: " + "31" + "20" + " y vive en la calle 123")
+        //operaciones
+        document.write("<br>")
+
+        document.write("La edad de moiso es: ")
+        document.write(21 + 10)
+        //año de nacimiento
+        document.write("<br>")
+        document.write("El año de nacimiento de moiso es: ")
+        document.write(2022 - 31)
+        //promediod de edad 
+        document.write("<br>")
+        document.write("El promedio de edad de moiso, david, juan es: ")
+        document.write((31 + 30 + 29) / 3) //respetar operaciones matematicas ()
+
+        //edad de cada uno 
+        var anho = 2022
+        document.write("<br>")
+        document.write("La edad de moiso es: " + (anho - 1991) + " años")
+        document.write("<br>")
+        document.write("La edad de david es: " + (anho - 1992) + " años")
+        document.write("<br>")
+        document.write("La edad de juan es: " + (anho  - 1993) + " años")
+
+        var promedio = (21 + 30 + 39) / 3
+        document.write("<br>")
+        document.write("El promedio de edad de moiso, david, juan es: " + promedio + " años")
+        document.write("El promedio de edad de moiso, david, juan es: " + Math.round (promedio) + " años") //redondea el promedio
+
+        //variables edades 
+        document.write("usando variables")
+        var edadMoiso = 31
+        var edadDavid = 30
+        var edadJuan = 29 
+        var nombreMoiso = "Moiso"
+        var nombreDavid = "David"
+        var nombreJuan = "Juan"
+        promedio = (edadMoiso + edadDavid + edadJuan) / 3
+        document.write("<br>")
+        document.write("El promedio de edad de moiso, david, juan es: " + Math.round (promedio) + " años") //redondea el promedio
+        document.write("<br>")
+        document.write("El promedio de edad de " + nombreMoiso + ", " + nombreDavid + ", " + nombreJuan + " es: " + Math.round (promedio) + " años") //redondea el promedio
+        //las edades son 
+        document.write("<br>")
+        document.write("Las edades son: " + edadMoiso + ", " + edadDavid + ", " + edadJuan + " años") //redondea el promedio
+
+
+        //mejorar para mantenimiento
+        document.write("<br>")
+        document.write("mejora de mantenimiento")
+        document.write("<br>")
+        var saltoLinea = "<br>" //variable para salto de linea 
+        document.write(saltoLinea)
+        document.write("Las edades son: " + edadMoiso + ", " + edadDavid + ", " + edadJuan + " años" + saltoLinea) //redondea el promedio
+        document.write(saltoLinea)
+        document.write("El promedio de edad de " + nombreMoiso + ", " + nombreDavid + ", " + nombreJuan + " es: " + Math.round (promedio) + " años" + saltoLinea) //redondea el promedio
+        document.write(saltoLinea)
+
+        document.write("usando funciones")
+        document.write(saltoLinea)
+        document.write(saltoLinea)
+        function saltarlinea(){
+            document.write("<br>")
+        }
+        document.write("Las edades son: " + edadMoiso + ", " + edadDavid + ", " + edadJuan + " años" + saltoLinea) //redondea el promedio
+        saltarlinea()
+        document.write("El promedio de edad de " + nombreMoiso + ", " + nombreDavid + ", " + nombreJuan + " es: " + Math.round (promedio) + " años" + saltoLinea) //redondea el promedio
+        saltarlinea()
+
+        function escribir(frase){
+            document.write(frase)
+            saltarlinea() //llama a la funcion saltarlinea
+
+        }
+        escribir("hola desde función") //recibe un parametro, frase, el defnio en la funcion escribir
+        escribir("moiso tiene " + edadMoiso + " años")
+        saltarlinea()
+        escribir("david tiene " + (anho - 1985) + " años")
+
+
+
+    </script>
+</body>
+</html>
