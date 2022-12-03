@@ -22,7 +22,39 @@
         imcDos = calcularIMC(pesoMoiso, alturaMoiso)
         document.write("<br>")
         document.write("El IMC de Moiso es: " + imcDos)  
+        document.write("<br>")
 
+        function calcularIMCDos(peso1, altura1, nombre1, peso2, altura2, nombre2){
+            imc1 = peso1 / (altura1 * altura1)
+            imc2 = peso2 / (altura2 * altura2)
+            
+            //promedio del imc
+            document.write("El promedio de IMC de " + nombre1 + " y " + nombre2 + " es: " + (imc1 + imc2) / 2)
+            
+        }
+        calcularIMCDos(70, 1.70, "Moiso", 80, 1.80, "David") //llamada a la funcion
+
+        function calcularIMCTres(peso, altura){
+            imc = peso / (altura * altura)
+            return imc
+        }
+        var samuel=calcularIMCTres(70, 1.70)
+        var david=calcularIMCTres(80, 1.80)
+        document.write("<br>")
+        document.write("El promedio de IMC de Samuel y David es: " + (samuel + david) / 2)
+
+        //usando prompt
+        function calcularIMCCuatro(){
+            nombre = prompt("Ingrese su nombre")
+            peso = prompt("Ingrese el peso")
+            altura = prompt("Ingrese la altura")
+            imc = peso / (altura * altura)
+            return imc
+            
+        }
+        document.write("<br>")
+        document.write("El IMC de " + nombre + " es: " + calcularIMCCuatro())
+        
 
     </script>
 </body>
