@@ -14,10 +14,29 @@
 
         var victorias=prompt("Ingrese el número de victorias");
         var empates=prompt("Ingrese el número de empates");
+        var puntosAhnoPasado=prompt("Ingrese los puntos del año pasado");
 
         puntosTotales=(victorias*3)+(empates*1); //entre () para que se resuelva primero y evitar que me contcatene, ya que el * tiene prioridad sobre el +
         //"10"*2=20 pero "10"+2=102, al estar () se resuelve primero y luego suma los enteros
         imprimir("El equipo tiene "+puntosTotales+" puntos");
+        //usando parseInt() para convertir a entero
+        // victorias=parseInt(victorias);
+        // empates=parseInt(empates);
+        // puntosTotales=(victorias*3)+(empates*1); 
+        // imprimir("El equipo tiene "+puntosTotales+" puntos"); 
+
+        //condicionales
+        document.write("<br>");
+        if(puntosTotales>puntosAhnoPasado){
+            imprimir("El equipo tiene más puntos que el año pasado");
+        }else if(puntosTotales==puntosAhnoPasado){
+            imprimir("El equipo tiene los mismos puntos que el año pasado");
+        }else{
+            imprimir("El equipo tiene menos puntos que el año pasado");
+        }
+
+
+
     </script>
 </body>
 </html>
