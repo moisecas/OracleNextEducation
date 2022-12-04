@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tabla de posiciones</title>
+</head>
+<body>
+    <script>
+        function imprimir(frase){
+            document.write(frase);
+        }
+
+        var victorias=prompt("Ingrese el número de victorias");
+        var empates=prompt("Ingrese el número de empates");
+
+        puntosTotales=(victorias*3)+(empates*1); //entre () para que se resuelva primero y evitar que me contcatene, ya que el * tiene prioridad sobre el +
+        //"10"*2=20 pero "10"+2=102, al estar () se resuelve primero y luego suma los enteros
+        imprimir("El equipo tiene "+puntosTotales+" puntos");
+    </script>
+</body>
+</html>
