@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinación con ciclos</title>
+</head>
+<body>
+    <h1>Adivina el numero - uso de ciclos</h1>
+    <script>
+        function saltarlinea(){
+            document.write("<br>")
+        }
+        function imprimir(texto){
+            document.write(texto)
+            saltarlinea()
+        }
+        var numeropensado= Math.round(Math.random()*10) //numero pensado por la maquina        
+        var intentos=3
+        var contador=1
+
+        while(contador<=intentos){ //mientras no adivine el numero pensado
+            var numerosolicitado= parseInt(prompt("Ingrese un numero entre 0-10"))
+            if(numeropensado==numerosolicitado){
+                imprimir("Adivinaste el numero pensado")
+                break //rompe el ciclo
+            }else{
+                imprimir("No adivinaste el numero pensado")
+                numerosolicitado= parseInt(prompt("Ingrese un numero entre 0-10"))
+            }
+            contador=contador+1
+        }
+        
+    </script>
+</body>
+</html>
