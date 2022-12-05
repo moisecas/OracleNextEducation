@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular la media de las edades</title>
+</head>
+<body>
+    <script>
+        function saltarlinea(){
+            document.write("<br>")
+        }
+        function imprimir(texto){
+            document.write(texto)
+            saltarlinea()
+        }
+        // edadPadre=parseInt(prompt("Ingrese la edad del padre"))
+        // edadMadre=parseInt(prompt("Ingrese la edad de la madre"))
+        // edadHijo=parseInt(prompt("Ingrese la edad del hijo"))
+        // edadHija=parseInt(prompt("Ingrese la edad de la hija"))
+
+        // mediaEdades= (edadPadre+edadMadre+edadHijo+edadHija)/4
+        // imprimir("La media de las edades es: " + mediaEdades) 
+
+        var numeroMiembros = parseInt(prompt("Ingrese el numero de miembros de la familia"))
+        var contador = 1
+        while(contador<=numeroMiembros){
+            var totaledad = 0
+            edad= parseInt(prompt("Ingrese la edad del miembro"))
+            totaledad= totaledad + edad
+            contador++
+            
+
+        }
+        imprimir("La media de las edades es: " + totaledad/numeroMiembros)
+        imprimir("Fin del ciclo")
+
+    </script>
+</body>
+</html>

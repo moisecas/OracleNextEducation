@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicar</title>
+</head>
+<body>
+    <script>
+        function saltarlinea(){
+            document.write("<br>")
+        }
+        function imprimir(texto){
+            document.write(texto)
+            saltarlinea()
+        }
+        
+        var numeroMultiplicar= parseInt(prompt("Ingrese un numero para multiplicar"))
+        var limite=parseInt(prompt("Ingrese el limite de la tabla"))
+        var contador=1 //requiere inicialización para que no se genere un ciclo infinito, debe haber algo con que comparar el limite
+        while(contador<=limite){ //mientras contador sea menor o igual a limite
+            imprimir(numeroMultiplicar + " x " + contador + " = " + (numeroMultiplicar*contador))
+            contador= contador + 1
+        } //si no salgo de la condición puede generarse un ciclo infinito
+
+        imprimir("Fin del ciclo") 
+
+        //for 
+        //for(inicialización; condición; incremento o decremento){
+            //instrucciones
+        //}
+        for(i=contador; i<=limite; i++){ //i es una variable que se crea dentro del for, no es necesario inicializarla
+            //instrucciones
+            imprimir(numeroMultiplicar + " x " + i + " = " + (numeroMultiplicar*i))
+            
+        }
+
+
+    </script>
+</body>
+</html>

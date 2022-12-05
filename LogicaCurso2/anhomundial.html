@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AÑO MUNDIAL FIFA</title>
+</head>
+<body>
+    <h1>
+        AÑO MUNDIAL FIFA
+    </h1>
+    <script>
+        function saltarlinea(){
+            document.write("<br>")
+        }
+        function imprimir(texto){
+            document.write(texto)
+            saltarlinea()
+        }
+        var anhoMundial= 1930 
+        var limite=parseInt(prompt("Ingrese el limite de años"))
+       
+        while(anhoMundial<=limite){
+            imprimir("Año Mundial: " + anhoMundial) 
+            anhoMundial= anhoMundial + 4
+        } //si no salgo de la condición puede generarse un ciclo infinito
+
+        imprimir("Fin del ciclo") 
+
+
+    </script>
+</body>
+</html>
