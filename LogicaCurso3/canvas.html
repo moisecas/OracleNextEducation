@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas width="600" height="400" ></canvas>
+    <script>
+        var pantalla= document.querySelector("canvas")
+        var pincel= pantalla.getContext("2d")
+
+        pincel.fillStyle="green"
+        pincel.fillRect(0,0,50,50)
+        pincel.strokeStyle="red"
+        pincel.strokeRect(0,0,50,50)
+
+        pincel.fillStyle="green"
+        pincel.fillRect(50,0,50,50)
+        pincel.strokeStyle="red"
+        pincel.strokeRect(0,0,50,50)
+
+        function dibujarcuadrado(x,y,ancho,alto,color){ //recibe 5 parametros, posicion x, posicion y, ancho, alto y color
+            pincel.fillStyle=color
+            pincel.fillRect(x,y,ancho,alto)
+            pincel.strokeStyle="red"
+            pincel.strokeRect(x,y,ancho,alto)
+        }
+        dibujarcuadrado(100,0,50,50,"green")
+        dibujarcuadrado(150,0,50,50,"green")
+        dibujarcuadrado(200,0,50,50,"green")
+        dibujarcuadrado(250,0,50,50,"black")
+        dibujarcuadrado(300,0,50,50,"yellow")
+        dibujarcuadrado(350,0,50,50,"blue")
+        dibujarcuadrado(400,0,50,50,"red")
+        dibujarcuadrado(450,0,50,50,"purple") 
+        //en vertical
+        dibujarcuadrado(0,50,50,50,"green") 
+        dibujarcuadrado(0,100,50,50,"black")
+        dibujarcuadrado(0,150,50,50,"yellow")
+
+        var x=0
+        while(x<600){
+            dibujarcuadrado(x,200,50,50,"yellow")
+            dibujarcuadrado(x,250,50,50,"blue")
+            dibujarcuadrado(x,300,50,50,"red")
+            x=x+50
+        }
+
+        //for 
+        for(var x=0;x<600;x=x+50){ //x=x+50 es lo mismo que x+=50 para incrementar de 50 en 50
+            dibujarcuadrado(x,350,50,50,"purple")
+        }
+
+
+    </script>
+</body>
+</html>
