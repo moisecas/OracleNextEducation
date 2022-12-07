@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+</head>
+<body>
+    <h1>Usando canvas JS</h1>
+    <canvas width="600" height="400" > <!*-- 600px de ancho y 400px de alto --*> 
+
+    </canvas>
+
+    <script>
+        //relaciondo con el canvas
+        var canvas= document.querySelector("canvas") //selecciona el canvas
+        var pincel= canvas.getContext("2d") //selecciona el pincel del canvas
+        pincel.fillStyle="violet" //selecciona el color del pincel
+        pincel.fillRect(0,0,600,400) //rellena el canvas con un rectangulo, en la posición 0,0, de 100px de ancho y 100px de alto
+        
+        pincel.fillStyle="black" //selecciona el color del pincel
+        pincel.fillRect(0,0,100,100) //rellena el canvas con un rectangulo, en la posición 0,0, de 100px de ancho y 100px de alto
+    
+        pincel.fillStyle="red" //selecciona el color del pincel
+        pincel.fillRect(400,0,100,100) //rellena el canvas con un rectangulo, en la posición 0,0, de 100px de ancho y 100px de alto
+        
+        //alterar 
+        pincel.fillStyle="blue" //selecciona el color del pincel
+        pincel.beginPath() //inicia el camino
+        pincel.moveTo(300,200) //mueve el pincel a la posición 0,0
+        pincel.lineTo(400,300) //dibuja una linea desde la posición 0,0 hasta la posición 100,100
+        pincel.lineTo(200,300) //dibuja una linea desde la posición 0,0 hasta la posición 100,100
+        pincel.fill() //rellena el camino
+
+        //dibujar un circulo
+        pincel.fillStyle="yellow" //selecciona el color del pincel
+        pincel.beginPath() //inicia el camino
+        pincel.arc(300,200,50,0,Math.PI*2) //dibuja un circulo en la posición 300,200, de 50px de radio, desde 0 hasta 2PI
+        pincel.fill() //rellena el camino
+
+        //dibujar una montaña
+        pincel.fillStyle="green" //selecciona el color del pincel
+        pincel.beginPath() //inicia el camino
+        pincel.moveTo(0,400) //mueve el pincel a la posición 0,0
+        pincel.lineTo(300,200) //dibuja una linea desde la posición 0,0 hasta la posición 100,100
+        pincel.lineTo(600,400) //dibuja una linea desde la posición 0,0 hasta la posición 100,100
+        pincel.fill() //rellena el camino
+        
+
+    </script>
+</body>
+</html>
