@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego al blanco</title>
+</head>
+<body>
+    <h1>Tiro al blanco</h1> 
+    <canvas width="600" height="400" ></canvas>
+    <script>
+        var pantalla=document.querySelector("canvas")
+        var pincel=pantalla.getContext("2d")
+        pincel.fillStyle="lightblue"
+        pincel.fillRect(0,0,600,400)
+
+        function dibujarCirculo(x,y,radio,color){
+            pincel.fillStyle=color
+            pincel.beginPath()
+            pincel.arc(x,y,radio,0,Math.PI*2,true)
+            pincel.fill()
+        }
+        function limpiarPantalla(){
+            pincel.clearRect(0,0,600,400)
+        }
+
+        var x = 0
+      
+        
+
+        function disenarObejetivo(x,y){
+            dibujarCirculo(x,y,40,"black")
+            dibujarCirculo(x,y,20,"red")
+            dibujarCirculo(x,y,10,"yellow")
+
+        }
+
+        // function sortearPosicion(maximo){
+        //     return Math.floor(Math.random()*maximo) //Math.floor redondea hacia abajo
+        // }
+        function actualizarPantalla(){
+            limpiarPantalla()
+            xAleatorio = Math.floor(Math.random()*600)
+            yAleatorio = Math.floor(Math.random()*400)
+            disenarObejetivo(xAleatorio,yAleatorio)
+            
+            x++;
+        }
+        setInterval(actualizarPantalla,1000) 
+
+        pantalla.onclick = function(evento){
+            var x = evento.offsetX
+            var y = evento.offsetY
+            console.log("x: "+x+" y: "+y)
+            if(xAleatorio-40<x && x<xAleatorio+40 && yAleatorio-40<y && y<yAleatorio+40){
+                alert("Ganaste")
+                clearInterval(intervalo)
+            }
+        }
+
+        
+        
+
+       
+
+
+    </script>
+</body>
+</html>
