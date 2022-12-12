@@ -9,6 +9,11 @@ h1{
     color: red;
     text-align: center;
     background: #ccc; /* color de fondo cinza claro */ 
+    padding: 10px;
+    width: 100%;
+    border: #333 10px solid;
+    margin-top: auto;
+
 }
 p{
     color: blue;
@@ -21,4 +26,10 @@ em{
     background: #ccc; 
     text-align: center;
     padding: 10px;
+    width: 100%;
+    
+    float: left;
+
+
+
 }
