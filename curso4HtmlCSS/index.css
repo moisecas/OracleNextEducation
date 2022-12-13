@@ -33,3 +33,60 @@ em{
 
 
 }
+
+.itemns{
+    background: #ccc; 
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border: #333 10px solid;
+    margin-top: auto;
+    float: left;
+}
+.diferenciales{
+    background: wheat; 
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    border: #333 10px solid;
+    margin-top: auto;
+    float: left;
+   
+
+}
+ul{
+    display: inline-block; 
+    vertical-align: top;
+    width: 20%;
+    margin-right: 20%;
+}
+
+.principal{
+    background: brown; 
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    border: #333 10px solid;
+    margin-top: auto;
+    float: left;
+}
+.imagediferenciales{
+    background: #ccc; 
+    text-align: center;
+    padding: 30px; 
+    width: 50%;
+    border: #333 10px solid;
+    margin-top: auto;
+    float: left;
+}
+.nav{
+    background: #ccc; 
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border: #333 10px solid;
+    margin-top: auto;
+    float: left; 
+    
+
+}
