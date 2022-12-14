@@ -33,6 +33,47 @@ nav a{
 }
 
 main img{
-    width: 20%;    
-    display: block;
+    width: 80%;    
+    margin: 0 auto;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+   
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background-color: aliceblue;
+    margin: 0 1.5% 1.5% 0;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px; 
+}
+
+.productos h2{  
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none; 
+    margin: 0 0 0 10px;
+    
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 30px;
+    font-weight: bold; 
+    margin-top: 10px;
 }
