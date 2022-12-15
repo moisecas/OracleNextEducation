@@ -96,3 +96,11 @@ nav a:hover{
     border-color: violet;
     
 }
+footer{
+    background-color: #000;
+    color: #fff; 
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
