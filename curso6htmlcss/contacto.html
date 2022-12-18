@@ -25,18 +25,28 @@
     <main>
         <h1 class="contacto">Contacto</h1>
         <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
+            <label  for="nombre">Nombre</label>
+            <input class="otros" type="text" name="nombre" id="nombre">
             <br>
             <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
+            <input class="otros"  type="text" name="apellido" id="apellido">
             <br>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input class="otros"  type="email" name="email" id="email">
             <br>
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             <br>
+            <label for="terminos">¿Como le gustaría que le contactemos?</label>
+
+            <label for="telefono"><input type="radio" name="contacto" id="telefono" value="telefono">Telefono</label>
+
+            <label for="email"><input type="radio" name="contacto" id="email" value="email">Email</label>
+
+            <label for="whatsapp"><input type="radio" name="contacto" id="whatsapp" value="whatsapp">Whatsapp</label>
+
+            <label for="terminos"><input type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones</label>
+
             <input type="submit" value="Enviar">
         </form>
 
