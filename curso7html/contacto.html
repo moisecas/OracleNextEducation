@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contacto.css">
+    <link rel="stylesheet" href="./productos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1> <img src="./logo.jpg" alt=""></h1> 
+            <nav>
+                <ul class="navegacion">
+                    <li class="items"><a href="index.html">Inicio</a></li>
+                    <li class="items"><a href="productos.html">Productos</a></li>
+                    <li class="items"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <h1 class="contacto">Contacto</h1>
+        <form action="">
+            <label  for="nombre">Nombre</label>
+            <input class="otros" type="text" name="nombre" id="nombre" required placeholder="nombre" >
+            <br>
+            <label for="apellido">Apellido</label>
+            <input class="otros"  type="text" name="apellido" id="apellido" required placeholder="apellido">
+            <br>
+            <label for="email">Email</label>
+            <input class="otros"  type="email" name="email" id="email" required  placeholder="email">
+            <br>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required placeholder="Nos gustaría leerlo"></textarea>
+            <br>
+            <label for="terminos">¿Como le gustaría que le contactemos?</label>
+
+            <label for="telefono"><input type="radio" name="contacto" id="telefono" value="telefono">Telefono</label>
+
+            <label for="email"><input type="radio" name="contacto" id="email" value="email">Email</label>
+
+            <label for="whatsapp"><input type="radio" name="contacto" id="whatsapp" value="whatsapp">Whatsapp</label>
+            <p>¿En que horario desea ser atendido?</p>
+            <select name="horario" id="horario">
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+            </select>
+
+            <label for="terminos"><input type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones</label>
+
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+
+        <h2>Horario de atención</h2>
+        <table>
+            <tr>
+                <th>Dia</th>
+                <th>Horario</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>9:00 a 18:00</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>9:00 a 18:00</td>
+            </tr>
+            <tr>
+                <td>Miercoles</td>
+                <td>9:00 a 18:00</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>9:00 a 18:00</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>9:00 a 18:00</td>
+            </tr>
+            <tr>
+                <td>Sabado</td>
+                <td>9:00 a 18:00</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>Cerrado</td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>
+        <div class="caja">
+            <img src="./logo.jpg" alt="logo">  
+            <div class="redes">
+                <a href="https://www.facebook.com/"><img src="./facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="./instagram.png" alt=""></a>
+                <a href="https://twitter.com/"><img src="./twitter.png" alt=""></a>
+            </div>
+            <div class="contacto">
+                <p>Telefono: 351-1234567</p>
+                <p>Email:
+            </div>
+            <p>Copyright © 2022 My Website</p>
+
+
+    </footer>
+</body>
+</html>
