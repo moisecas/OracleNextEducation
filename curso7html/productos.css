@@ -115,3 +115,34 @@ footer{
     background-repeat: no-repeat;
     position: relative;
 }
+
+.utiles{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    background: #ccc; /* color de fondo cinza claro */ 
+    padding: 10px;
+    width: 100%;
+   
+    margin-top: auto;
+
+}
+p{
+    color:black;
+}
+em{
+    color: green;
+}
+.imagediferenciales{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 600px;
+    margin-block-end: 100px;
+    
+}
