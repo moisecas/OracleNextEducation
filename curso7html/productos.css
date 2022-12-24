@@ -8,6 +8,7 @@ header{
     width: 940px;
     margin: 0 auto;
     position: relative;
+    
 
 }
 
@@ -145,4 +146,8 @@ em{
     margin-left: 600px;
     margin-block-end: 100px;
     
+}
+
+#img{
+    text-align: left;
 }

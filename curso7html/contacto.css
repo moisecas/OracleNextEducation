@@ -76,3 +76,18 @@ h2{
     text-align: center;
     margin-bottom: 20px;
 }
+.principal{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+   
+}
+.mapa{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
