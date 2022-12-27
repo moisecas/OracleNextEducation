@@ -79,6 +79,7 @@ main img{
     font-size: 30px;
     font-weight: bold; 
     margin-top: 10px;
+    color: #000; 
 }
 
 nav a:hover{
@@ -134,7 +135,7 @@ h1{
 
 }
 p{
-    color:black;
+    color : white;
 }
 em{
     color: green;
@@ -145,9 +146,25 @@ em{
     margin-bottom: 100px;
     margin-left: 600px;
     margin-block-end: 100px;
+    text-align: center;
     
 }
 
 #img{
     text-align: left;
 }
+
+.diferenciales{
+    width: 640px;
+    margin: 0 auto;
+    
+}
+.items:first-child{
+   font-weight: bold;
+}
+body{
+    background: linear-gradient(to top, #808080, #000000);
+}
+
+
+  
