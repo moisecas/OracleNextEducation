@@ -140,7 +140,7 @@ p{
 em{
     color: green;
 }
-.imagediferenciales{
+/* .imagediferenciales{
     width: 50%;
     margin-top: 10px;
     margin-bottom: 100px;
@@ -148,7 +148,7 @@ em{
     margin-block-end: 100px;
     text-align: center;
     
-}
+} */
 
 #img{
     text-align: left;
@@ -164,6 +164,10 @@ em{
 }
 body{
     background: linear-gradient(to top, #808080, #000000);
+}
+.items::before{
+    content: "✪";
+    
 }
 
 
