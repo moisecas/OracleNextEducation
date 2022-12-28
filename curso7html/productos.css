@@ -140,15 +140,11 @@ p{
 em{
     color: green;
 }
-/* .imagediferenciales{
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-left: 600px;
-    margin-block-end: 100px;
-    text-align: center;
-    
-} */
+
+.imagediferenciales:hover{  
+    opacity: 0.3;
+
+}
 
 #img{
     text-align: left;
