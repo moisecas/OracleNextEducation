@@ -50,7 +50,32 @@ public class TipoVariable {
 
         //concatenación
         System.out.println("Concatenación: " + texto + " " + texto);
-        
+
+        //convertir datos 
+        System.out.println("Convertir datos");
+        System.out.println("Convertir entero a decimal: " + (double)numero);
+        System.out.println("Convertir decimal a entero: " + (int)decimal);
+        System.out.println("Convertir entero a texto: " + String.valueOf(numero));
+        System.out.println("Convertir texto a entero: " + Integer.parseInt(texto));
+        System.out.println("Convertir texto a decimal: " + Double.parseDouble(texto));
+        System.out.println("Convertir texto a boolean: " + Boolean.parseBoolean(texto));
+        System.out.println("Convertir texto a caracter: " + texto.charAt(0));
+        System.out.println("Convertir caracter a texto: " + String.valueOf(caracter));
+        System.out.println("Convertir boolean a texto: " + String.valueOf(verdadero));
+        System.out.println("Convertir decimal a texto: " + String.valueOf(decimal));
+        System.out.println("Convertir decimal a texto: " + String.valueOf(decimal2));
+
+        //otros tipos de datos 
+        System.out.println("Otros tipos de datos");
+        long numeroLargo = 1000000000000000000L; //long
+        short numeroCorto = 100; //short 
+        byte numeroByte = 100; //byte
+        float numeroFloat = 100.5f; //float
+        System.out.println("Número largo: " + numeroLargo);
+        System.out.println("Número corto: " + numeroCorto);
+        System.out.println("Número byte: " + numeroByte); 
+        System.out.println("Número float: " + numeroFloat);
+
 
     
     }
