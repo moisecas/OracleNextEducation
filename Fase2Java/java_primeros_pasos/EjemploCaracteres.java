@@ -1,4 +1,4 @@
-package LogicaProgramación.Fase2Java.java_primeros_pasos;
+package LogicaProgramación.Fase2Java.java_primeros_pasos; 
 
 public class EjemploCaracteres {
     public static void main(String[] args) {
