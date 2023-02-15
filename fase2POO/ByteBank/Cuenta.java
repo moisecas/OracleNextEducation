@@ -5,7 +5,7 @@ public class Cuenta {
     Cliente titular; //creo un objeto de la clase Cliente
     int numero;
     int agencia;
-    double saldo;
+    double saldo; //public para poder acceder desde otra clase 
     
     
     //métodos
@@ -40,5 +40,36 @@ public class Cuenta {
         }
         
     }
+
+    public double getSaldo(){
+        return this.saldo;
+    }
+
+    public void setAgencia(int agencia){
+        if(agencia <= 0){
+            System.out.println("No se puede asignar un valor menor o igual a 0");
+            return;
+        }
+        this.agencia = agencia;
+    }
+    public int getAgencia() {
+        return agencia;
+    }
+
+    //set titular
+    public void setTitular(Cliente titular){
+        this.titular = titular;
+    }
+
+    //get titular
+    public Cliente getTitular(){
+        return titular;
+    }
+
+    //set numero
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+
 
 }
