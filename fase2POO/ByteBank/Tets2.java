@@ -9,6 +9,10 @@ public class Tets2 {
         cuentaMoises.setTitular(moises);
         cuentaMoises.setNumero(123);
         cuentaMoises.setAgencia(456); 
+        cuentaMoises.getTotal();
+
+        
+        
         
 
     }

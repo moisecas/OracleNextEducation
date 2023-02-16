@@ -6,6 +6,8 @@ public class Cuenta {
     int numero;
     int agencia;
     double saldo; //public para poder acceder desde otra clase 
+
+    private static int total; //variable de clase
     
     
     //métodos
@@ -70,6 +72,22 @@ public class Cuenta {
     public void setNumero(int numero){
         this.numero = numero;
     }
+
+    //get numero
+    public int getNumero(){
+        return numero;
+    }
+
+    //método de clase
+    public static int getTotal(){
+        return Cuenta.total;
+    }
+    //set total
+    public static void setTotal(int total){
+        Cuenta.total = total;
+    }
+    //constructor
+
 
 
 }
