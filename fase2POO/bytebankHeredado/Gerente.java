@@ -1,57 +1,34 @@
 package fase2POO.bytebankHeredado;
 
-public class Gerente {
+public class Gerente extends Funcionario {
     //nombre, documento, salario
-    private String nombre;
-    private String documento;
-    private double salario;
-    private int tipo; //1 = gerente, 2 = funcionario 
+    
+    private String clave; 
 
     //constructor
-    public Gerente(String nombre, String documento, double salario, int tipo) { //se llama como la clase
-        this.nombre = nombre;
-        this.documento = documento;
-        this.salario = salario;
-        this.tipo = tipo;
-     }
-
-     //set y get
-
-    public String getNombre() {
-        return nombre;
+    public Gerente(String nombre, String documento, double salario, int tipo, String clave) { //se llama como la clase
+        super(nombre, documento, salario, tipo);
+        this.clave = clave;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    
+
+    public String getClave() {
+        return clave;
     }
 
-    public String getDocumento() {
-        return documento;
+    public void setClave(String clave) {
+        this.clave = clave;
     }
 
-    public void setDocumento(String documento) {
-        this.documento = documento;
-    }
-
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-
-    //metodo bonificacion = a otro salario
-    public double getBonificacion() {
-        return this.salario; //accede al salario de la clase Funcionario
-    }
-
-    public int getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public boolean iniciarSesion(String clave) { //recibe la clave que se ingresa en el main
+        if (this.clave == clave) {
+            System.out.println("Sesion iniciada");
+            return true;
+        } else {
+            System.out.println("Sesion no iniciada");
+            return false;
+        }
     }
 
 

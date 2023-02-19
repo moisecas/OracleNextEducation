@@ -10,11 +10,12 @@ public class TestGerente {
         
         // System.out.println(gerente.getBonificacion()); //getBonificacion() es un metodo de la clase Funcionario
         
-        Funcionario moises = new Funcionario("Moises", "12345678A", 10000,1); //se llama como la clase
+        Gerente moises = new Gerente("Moises", "12345678A", 10000,1, "clave123"); //se llama como la clase
         System.out.println(moises.getNombre());
         System.out.println(moises.getDocumento());
         System.out.println(moises.getSalario());
         System.out.println(moises.getTipo());
+        System.out.println(moises.getClave());
         System.out.println(moises.getBonificacion()); //getBonificacion() es un metodo de la clase Funcionario
 
 
