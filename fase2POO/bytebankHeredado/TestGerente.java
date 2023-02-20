@@ -17,7 +17,9 @@ public class TestGerente {
         System.out.println(moises.getTipo());
         System.out.println(moises.getClave());
         System.out.println(moises.getBonificacion()); //getBonificacion() es un metodo de la clase Funcionario
-
+        System.out.println(moises.iniciarSesion("clave123")); 
+        
+        
 
     }
 }

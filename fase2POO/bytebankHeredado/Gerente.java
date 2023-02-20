@@ -31,6 +31,10 @@ public class Gerente extends Funcionario {
         }
     }
 
+    public double getBonificacion() {
+        return super.getSalario(); //de la clase padre, de la clase que esta arriba de mi en la jerarquia de herencia traigo el salario
+    }
+
 
 
 
