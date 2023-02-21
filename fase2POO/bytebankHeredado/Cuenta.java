@@ -9,6 +9,15 @@ public class Cuenta {
 
     private static int total; //variable de clase
     
+    //constructor
+    public Cuenta (int agencia, int numero){
+        Cuenta.total++; //incremento el total de cuentas
+        System.out.println("Se está creando una cuenta con el número " + numero);
+        this.agencia = agencia;
+        this.numero = numero;
+        this.saldo = 0;
+    } 
+    
     
     //métodos
     public void deposita(double valor){ //valor es la cantidad que se deposita
