@@ -15,6 +15,9 @@ public class Funcionario {
         this.tipo = tipo;
      }   
 
+     public Funcionario() { //se llama como la clase
+     }
+
     
     //set y get
 

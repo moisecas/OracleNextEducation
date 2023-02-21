@@ -11,6 +11,9 @@ public class Gerente extends Funcionario {
         this.clave = clave;
     }
 
+    public Gerente() { //se llama como la clase
+    }
+
     
 
     public String getClave() {
@@ -31,8 +34,10 @@ public class Gerente extends Funcionario {
         }
     }
 
+    //sobreescribir el metodo getBonificacion de la clase Funcionario
     public double getBonificacion() {
-        return super.getSalario(); //de la clase padre, de la clase que esta arriba de mi en la jerarquia de herencia traigo el salario
+        return super.getSalario() + 
+        (super.getSalario()*0.1); //de la clase padre, de la clase que esta arriba de mi en la jerarquia de herencia traigo el salario
     }
 
 
