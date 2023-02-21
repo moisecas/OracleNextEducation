@@ -2,7 +2,7 @@ package fase2POO.bytebankHeredado;
 
 public class TestControl {
     public static void main(String[] args) {
-        Funcionario moises = new Funcionario();
+        Funcionario moises = new Contador();
         moises.setSalario(1000);
 
         Gerente maria = new Gerente();

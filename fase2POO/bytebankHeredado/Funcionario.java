@@ -1,6 +1,6 @@
 package fase2POO.bytebankHeredado;
 
-public class Funcionario {
+public abstract class  Funcionario {
     //nombre, documento, salario
     private String nombre;
     private String documento;

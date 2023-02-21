@@ -2,11 +2,13 @@ package fase2POO.bytebankHeredado;
 
 public class TestFuncionario {
     public static void main(String[] args) {
-        Funcionario moises = new Funcionario("Moises", "12345678A", 1000,2); //se llama como la clase 
+        Funcionario moises = new Contador(); //se llama como la clase
+        moises.setSalario(1000);
+        moises.setDocumento("12345678A");
+        moises.setNombre("Moises");
         System.out.println(moises.getNombre());
         System.out.println(moises.getDocumento());
         System.out.println(moises.getSalario());
-        System.out.println(moises.getTipo());
         System.out.println(moises.getBonificacion()); //getBonificacion() es un metodo de la clase Funcionario
         
 
