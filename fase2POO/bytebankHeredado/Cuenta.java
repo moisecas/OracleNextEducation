@@ -1,7 +1,7 @@
 package fase2POO.bytebankHeredado;
 
-public class Cuenta {
-    //atributos 
+public abstract class Cuenta {
+    //atributos  
     Cliente titular; //creo un objeto de la clase Cliente
     int numero;
     int agencia;
@@ -20,9 +20,7 @@ public class Cuenta {
     
     
     //métodos
-    public void deposita(double valor){ //valor es la cantidad que se deposita
-        this.saldo += valor; //this hace referencia al objeto que llama al método, aumenta el saldo de la cuenta
-    }
+    public abstract void deposita(double valor); //metodo abstracto, no tiene cuerpo, no tiene implementacion, no tiene codigo, no tiene logica, no tiene nada, solo se declara
 
     public boolean retiar (double valor){
         if(this.saldo >= valor){

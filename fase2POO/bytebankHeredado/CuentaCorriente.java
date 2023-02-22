@@ -11,6 +11,11 @@ public class CuentaCorriente extends Cuenta {
         double comision = 0.2;
         return super.retiar(valor + comision); //retire lo solicitado mas la comision para el banco y lo retorne a la clase padre
     }
+
+    @Override
+    public void deposita(double valor) { //sobreescribimos el metodo deposita de la clase padre
+         this.saldo += valor; //saldo = saldo + valor
+    }
     
 
 }

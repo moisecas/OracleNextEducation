@@ -45,13 +45,8 @@ public abstract class  Funcionario {
         this.salario = salario;
     }
 
-    public double getBonificacion() {
-        if (this.tipo == 1) {
-            return this.salario;
-        } else {
-            return this.salario * 0.1;
-        }
-    }
+    public abstract double getBonificacion(); 
+    //metodo abstracto, no tiene cuerpo, no tiene implementacion, no tiene codigo, no tiene logica, no tiene nada, solo se declara
 
     public int getTipo() {
         return tipo;

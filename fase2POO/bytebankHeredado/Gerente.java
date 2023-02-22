@@ -34,7 +34,7 @@ public class Gerente extends Funcionario {
         }
     }
 
-    //sobreescribir el metodo getBonificacion de la clase Funcionario
+    
     public double getBonificacion() {
         return super.getSalario() + 
         (super.getSalario()*0.1); //de la clase padre, de la clase que esta arriba de mi en la jerarquia de herencia traigo el salario
