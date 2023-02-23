@@ -10,7 +10,7 @@ public class TestControl {
 
         ControlBonificacion control = new ControlBonificacion(); //se crea un objeto de la clase ControlBonificacion
         control.registrarSalario(moises);
-        control.registrarSalario(maria);
+        control.registrarSalario(moises); 
 
         Contador contador = new Contador();
         contador.setSalario(2000);

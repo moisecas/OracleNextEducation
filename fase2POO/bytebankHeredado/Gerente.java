@@ -1,44 +1,86 @@
 package fase2POO.bytebankHeredado;
 
-public class Gerente extends Funcionario {
+public class Gerente extends FuncionarioAutenticable {
     //nombre, documento, salario
     
     private String clave; 
+    private String nombre;
+    private String documento;
+    private double salario;
+    private int tipo; //1 = gerente, 2 = funcionario
+   
 
-    //constructor
-    public Gerente(String nombre, String documento, double salario, int tipo, String clave) { //se llama como la clase
-        super(nombre, documento, salario, tipo);
-        this.clave = clave;
-    }
-
-    public Gerente() { //se llama como la clase
-    }
+   
 
     
+    public double getBonificacion() {
+        System.out.println("Metodo getBonificacion de Gerente");
+        return super.getSalario() + this.getSalario(); 
+    }
 
-    public String getClave() {
-        return clave;
+    //set salario 
+    public void setSalario(double salario) {
+        if (salario >= 0) {
+            super.setSalario(salario);
+        }
     }
 
     public void setClave(String clave) {
         this.clave = clave;
     }
 
-    public boolean iniciarSesion(String clave) { //recibe la clave que se ingresa en el main
-        if (this.clave == clave) {
-            System.out.println("Sesion iniciada");
-            return true;
-        } else {
-            System.out.println("Sesion no iniciada");
-            return false;
-        }
+    public Gerente() {
+        // TODO Auto-generated constructor stub
     }
 
-    
-    public double getBonificacion() {
-        return super.getSalario() + 
-        (super.getSalario()*0.1); //de la clase padre, de la clase que esta arriba de mi en la jerarquia de herencia traigo el salario
+    public Gerente(String nombre, String documento, double salario) {
+        super();
+        this.nombre = nombre;
+        this.documento = documento;
+        this.salario = salario;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public String setClave() {
+        return clave;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
+
 
 
 

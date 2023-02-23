@@ -1,19 +1,20 @@
 package fase2POO.bytebankHeredado;
 
-public class Administrador extends Funcionario  {
+public class Administrador extends FuncionarioAutenticable  {
      
-    public Administrador(String nombre, String documento, double salario, int tipo) {
-        super(nombre, documento, salario, tipo);
-        // TODO Auto-generated constructor stub
-    }
+    private String clave;
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    } 
     
     public Administrador() {
         // TODO Auto-generated constructor stub
     }
 
-    @Override
+    
     public double getBonificacion() {
         // TODO Auto-generated method stub
-        return this.getSalario() * 0.2;
+        return 0;
     }
 }
