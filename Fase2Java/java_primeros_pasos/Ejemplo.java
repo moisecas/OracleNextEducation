@@ -1,4 +1,4 @@
-package LogicaProgramación.Fase2Java.java_primeros_pasos;
+package fase2Java.java_primeros_pasos; 
 
 public class Ejemplo {
       
