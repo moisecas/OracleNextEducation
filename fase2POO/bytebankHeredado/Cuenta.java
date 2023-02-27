@@ -20,7 +20,14 @@ public abstract class Cuenta {
     
     
     //métodos
-    public abstract void deposita(double valor); //metodo abstracto, no tiene cuerpo, no tiene implementacion, no tiene codigo, no tiene logica, no tiene nada, solo se declara
+    public void deposita(double valor) throws DepositoInsuficienteException  { //sobreescribimos el metodo deposita de la clase padre
+        
+        if(valor < 10){ //si el valor es menor a 0
+            throw new DepositoInsuficienteException("No se puede depositar una cantidad negativa"); //lanzamos una excepcion de tipo DepositoInsuficienteException
+        }
+        this.saldo += valor; //saldo = saldo + valor
+
+    }
 
     public void retirar (double valor) throws SaldoInsuficienteException{ //throws SaldoInsuficienteException es para indicar que el metodo puede lanzar una excepcion de tipo SaldoInsuficienteException
         if(this.saldo < valor){ //si el saldo es menor al valor a retirar

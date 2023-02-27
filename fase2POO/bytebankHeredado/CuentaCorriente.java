@@ -15,7 +15,7 @@ public class CuentaCorriente extends Cuenta {
     }
 
     @Override
-    public void deposita(double valor) { //sobreescribimos el metodo deposita de la clase padre
+    public void deposita(double valor) throws DepositoInsuficienteException { //sobreescribimos el metodo deposita de la clase padre
          this.saldo += valor; //saldo = saldo + valor
     }
     
