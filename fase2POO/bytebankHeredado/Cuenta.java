@@ -22,19 +22,28 @@ public abstract class Cuenta {
     //métodos
     public abstract void deposita(double valor); //metodo abstracto, no tiene cuerpo, no tiene implementacion, no tiene codigo, no tiene logica, no tiene nada, solo se declara
 
-    public boolean retiar (double valor){
-        if(this.saldo >= valor){
-            this.saldo -= valor;
-            System.out.println("Se ha retirado " + valor + " euros");
-            return true;  
-            
-        }else{
-            
-            System.out.println("No hay suficiente saldo");
-            return false; 
+    public void retirar (double valor) throws SaldoInsuficienteException{ //throws SaldoInsuficienteException es para indicar que el metodo puede lanzar una excepcion de tipo SaldoInsuficienteException
+        if(this.saldo < valor){ //si el saldo es menor al valor a retirar
+            throw new SaldoInsuficienteException("No hay suficiente saldo"); 
+            //lanzamos una excepcion de tipo SaldoInsuficienteException
         }
-         //no se ejecuta porque el método termina en el return
+        this.saldo -= valor; //restamos el valor al saldo
     }
+    
+    
+    // public boolean retiar (double valor){
+    //     if(this.saldo >= valor){
+    //         this.saldo -= valor;
+    //         System.out.println("Se ha retirado " + valor + " euros");
+    //         return true;  
+            
+    //     }else{
+            
+    //         System.out.println("No hay suficiente saldo");
+    //         return false; 
+    //     }
+    //      //no se ejecuta porque el método termina en el return
+    // }
 
     public boolean transferir(double valor, Cuenta destino){ //recibe el valor a transferir y la cuenta destino
         //validamos si es factible la transferencia
