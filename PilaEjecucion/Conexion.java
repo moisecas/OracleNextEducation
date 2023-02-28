@@ -1,9 +1,9 @@
 package PilaEjecucion;
 
-public class Conexion {
+public class Conexion  implements AutoCloseable{
     //simulando conexion a base de datos con un constructor
 
-    public Conexion() {
+    public Conexion() { 
         System.out.println("Abriendo conexion");
     }
  
@@ -15,4 +15,11 @@ public class Conexion {
     public void cerrar() {
         System.out.println("Cerrando conexion");
     }
+
+    @Override
+    public void close() throws Exception {
+        cerrar();
+        System.out.println("Cerrando conexion");
+    } //se usa para cerrar la conexion automaticamente
+
  }
