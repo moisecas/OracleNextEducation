@@ -7,7 +7,7 @@ public class Flujo {
       //arithmeticException();
       
       metodo4();
-      metodo3();
+      metodo3(); //no se ejecuta porque el programa se cae
 
       metodo1();
       metodo2();
@@ -55,6 +55,14 @@ public class Flujo {
         throw ae; 
 
     }
+
+    //suma de dos numeros
+    public static void arithmeticException(){
+      int a = 1;
+      int b = 0;
+      int c = a/b;
+      System.out.println(c);
+    } 
 
 
     
